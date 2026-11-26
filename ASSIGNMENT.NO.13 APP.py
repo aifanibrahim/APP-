@@ -3,21 +3,21 @@ import time
 
 # Task 1: Print numbers
 def print_numbers():
-for i in range(1, 6):
-print("Number:", i)
-time.sleep(1)
+  for i in range(1, 6):
+    print("Number:", i)
+    time.sleep(1)
 
 # Task 2: Print letters
 def print_letters():
-for letter in ['A', 'B', 'C', 'D', 'E']:
-print("Letter:", letter)
-time.sleep(1)
+  for letter in ['A', 'B', 'C', 'D', 'E']:
+    print("Letter:", letter)
+    time.sleep(1)
 
 # Task 3: Display messages
 def display_messages():
-for i in range(1, 6):
-print("Message:", i)
-time.sleep(1)
+  for i in range(1, 6):
+    print("Message:", i)
+    time.sleep(1)
 
 # Create threads
 t1 = threading.Thread(target=print_numbers)
