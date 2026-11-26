@@ -4,13 +4,13 @@ import tracemalloc
 
 # Function to create cyclic objects
 def create_cycles(number):
-for _ in range(number):
-list1 = []
-list2 = []
+    for _ in range(number):
+        list1 = []
+        list2 = []
 
 # Create a circular reference
-list1.append(list2)
-list2.append(list1)
+    list1.append(list2)
+    list2.append(list1)
 
 # Display garbage collector information
 print("Automatic GC enabled:", gc.isenabled())
